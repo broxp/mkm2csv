@@ -2,7 +2,9 @@ name := "mkm2csv"
 
 version := "1.0"
 
-lazy val `mkm2csv` = (project in file(".")).enablePlugins(PlayScala)
+// lazy val `mkm2csv` = (project in file(".")).enablePlugins(PlayScala)
+
+dependencyOverrides += "org.scala-sbt" % "sbt" % "0.13.1"
 
 resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 
