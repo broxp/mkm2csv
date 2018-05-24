@@ -14,8 +14,7 @@
 
             <p>By clicking ok, this program will place exactly two calls: One get auth call and one get stock call.</p>
             <p>No other calls will be made. This program is open source, so please go, verify it:
-                <a href="">
-                Github repo</a></p>
+                <a href="https://github.com/broxp/mkm2csv">Github repo</a></p>
 
             @if(message == "") {
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -30,7 +29,7 @@
 
             <hr class="my-4" />
 
-            @defining(List('_showConstraints->false, 'class->"form-control")) { attr =>
+            @defining(List('_showConstraints -> false, 'class -> "form-control")) { attr =>
                 @form(controllers.routes.HomeController.post) {
                     @helper.CSRF.formField
                     @inputText(formData("appToken"), attr: _*)
