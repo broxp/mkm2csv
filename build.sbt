@@ -14,9 +14,9 @@ scalaVersion := "2.12.2"
 
 // libraryDependencies ++= Seq(jdbc, ehcache, ws, specs2 % Test, guice)
 
-val stage = taskKey[Unit]("Stage task")
+// val stage = taskKey[Unit]("Stage task")
 
-val Stage = config("stage")
+// val Stage = config("stage")
 
 
 unmanagedResourceDirectories in Test <+= baseDirectory(_ / "target/web/public/test")
