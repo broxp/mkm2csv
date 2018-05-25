@@ -1,3 +1,5 @@
+import com.typesafe.sbt.packager.archetypes.JavaAppPackaging
+
 name := "mkm2csv"
 
 version := "1.0"
@@ -12,11 +14,13 @@ resolvers += "Akka Snapshot Repository" at "http://repo.akka.io/snapshots/"
 
 scalaVersion := "2.12.2"
 
+// enablePlugins(JavaAppPackaging)
+
 // libraryDependencies ++= Seq(jdbc, ehcache, ws, specs2 % Test, guice)
 
-// val stage = taskKey[Unit]("Stage task")
+val stage = taskKey[Unit]("Stage task")
 
-// val Stage = config("stage")
+val Stage = config("stage")
 
 
 unmanagedResourceDirectories in Test <+= baseDirectory(_ / "target/web/public/test")
