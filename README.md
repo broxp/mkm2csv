@@ -4,4 +4,4 @@ This small programm can place a api call to MKM to download your stock as CSV fi
 
 The class that makes the call M11DedicatedApp is taken from the official MKM website: https://www.mkmapi.eu/ws/documentation/API:Auth_java
 
-(!screenshot.png)
+![example](screenshot.png "Example")
