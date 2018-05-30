@@ -14,8 +14,8 @@ This program can also be run if java is not installed, but requires Java Portabl
 
 Download jPortable_8_Update_131.paf.exe from 
 
-https://portableapps.com/apps/utilities/java_portable
+https://sourceforge.net/projects/portableapps/files/Java%20Portable/
 
 Then open a console, navigate to the extracted portable apps folder, into bin and start the jar file like this:
 
->java -jar "C:\Users\%USERNAME%\Downloads\mkm2csv-1.0-SNAPSHOT-jar-with-dependencies.jar"
+> java -jar "C:\Users\%USERNAME%\Downloads\mkm2csv-1.0-SNAPSHOT-jar-with-dependencies.jar"
